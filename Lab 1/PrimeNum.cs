@@ -18,7 +18,7 @@ class PrimeNum
             }
             if(count==0)
             {
-                Console.WriteLine(i);
+                Console.Write(i+" ");
             }
         }
     }
