@@ -11,6 +11,7 @@ class Arith
         Console.WriteLine("Subtraction: " + (a - b));
         Console.WriteLine("Multiplication: " + (a * b));
         Console.WriteLine("Division: " + (a / b));
+        Console.WriteLine("___________________");
 
         Console.ReadLine();
     }
