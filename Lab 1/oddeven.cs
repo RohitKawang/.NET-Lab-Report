@@ -11,9 +11,13 @@ class OddEven
         {
             Console.WriteLine("The number is even.");
         }
-        else
+        else if (num % 2!=0)
         {
             Console.WriteLine("The number is odd.");
+        }
+        else
+        {
+            Console.WriteLine("The number is zero.");
         }
 
         Console.ReadLine();
