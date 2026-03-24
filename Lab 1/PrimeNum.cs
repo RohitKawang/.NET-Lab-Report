@@ -21,5 +21,6 @@ class PrimeNum
                 Console.WriteLine(i);
             }
         }
+        Console.ReadLine();
     }
 }

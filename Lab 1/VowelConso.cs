@@ -23,5 +23,6 @@ class VowelConso
                 Console.WriteLine("Consonant");
                 break;
         }
+        Console.ReadLine();
     }
 }

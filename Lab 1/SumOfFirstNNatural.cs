@@ -1,4 +1,4 @@
-using Sysmtem;
+using System;
 
 class SumOfFirstNNatural
 {
