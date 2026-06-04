@@ -1,24 +1,21 @@
 using System;
 
-class Employee
-{
-    public string Name { get; set; }
-    public int Age { get; set; }
-    public double Salary { get; set; }
-}
-
 class Program
 {
     static void Main()
     {
-        Employee emp = new Employee();
+        try
+        {
+            int[] arr = { 10, 20, 30, 40, 50 };
 
-        emp.Name = "Rohit";
-        emp.Age = 22;
-        emp.Salary = 45000;
+            Console.Write("Enter index (0-4): ");
+            int i = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Name: " + emp.Name);
-        Console.WriteLine("Age: " + emp.Age);
-        Console.WriteLine("Salary: " + emp.Salary);
+            Console.WriteLine("Value = " + arr[i]);
+        }
+        catch (IndexOutOfRangeException)
+        {
+            Console.WriteLine("Error: Invalid index.");
+        }
     }
 }
