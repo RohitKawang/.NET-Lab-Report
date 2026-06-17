@@ -1,21 +1,40 @@
 using System;
 
+// 1. The Employee Class
+public class Employee
+{
+    // Properties
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public double Salary { get; set; }
+
+    // Method to display details
+    public void DisplayDetails()
+    {
+        Console.WriteLine("--- Employee Details ---");
+        Console.WriteLine($"Name:   {Name}");
+        Console.WriteLine($"Age:    {Age}");
+        Console.WriteLine($"Salary: ${Salary:N2}");
+    }
+}
+
+// 2. The Test Class
 class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
-        try
-        {
-            int[] arr = { 10, 20, 30, 40, 50 };
+        // Create the employee object
+        Employee emp = new Employee();
 
-            Console.Write("Enter index (0-4): ");
-            int i = Convert.ToInt32(Console.ReadLine());
+        // Set the details
+        emp.Name = "Rohit Kawan";
+        emp.Age = 23;
+        emp.Salary = 35000;
 
-            Console.WriteLine("Value = " + arr[i]);
-        }
-        catch (IndexOutOfRangeException)
-        {
-            Console.WriteLine("Error: Invalid index.");
-        }
+        // Display the details
+        emp.DisplayDetails();
+
+        // Keep console open
+        Console.ReadLine();
     }
 }
