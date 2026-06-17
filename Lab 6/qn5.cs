@@ -8,24 +8,24 @@ using System.Windows.Forms;
 
 namespace WinFormsApp1
 {
-    public partial class OddEven : Form
+    public partial class Add : Form
     {
-        public OddEven()
+        public Add()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
-            int num = int.Parse(number.Text);
-            if (num % 2 == 0)
-            {
-                result.Text = "Even";
-            }
-            else
-            {
-                result.Text = "Odd";
-            }
+
+        }
+
+        private void btnadd_Click(object sender, EventArgs e)
+        {
+            int num1 = int.Parse(textBox1.Text);
+            int num2 = int.Parse(textBox2.Text);
+            int sum = num1 + num2;
+            result.Text = sum.ToString();
         }
     }
 }

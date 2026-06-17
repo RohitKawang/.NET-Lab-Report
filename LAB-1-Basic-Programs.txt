@@ -1,0 +1,85 @@
+LAB-1 (Basic Programs)
+1. WAP to input two numbers and perform addition, subtraction, multiplication and division.
+2. WAP to input radius of circle and find its area.
+3. WAP to input a number and check odd/even.
+4. WAP to input a letter and check vowel/consonant.
+5. WAP to find sum of first N natural numbers.
+6. WAP to input two numbers and print all numbers between first and second.
+7. WAP to print the series:
+   *
+   **
+   ***
+   ****
+   *****
+8. WAP to print all prime numbers 100 to 200.
+
+
+
+
+
+
+
+
+
+
+
+LAB-2 (Array and Function)
+1. WAP to create an array of size "n", input "n" numbers and find their sum.
+2. WAP to sort the elements of an array in ascending order.
+3. WAP to print the diagonal elements of a matrix.
+4. Create a function void check(int n) that checks whether given number is odd/even.
+5. Create a function int reverse(int n) that returns the reverse of given number.
+6. Create a function int max(int[]) that returns the maximum value in an array.
+ 
+
+
+
+
+
+LAB-3 (Object Oriented Concept & Inheritance)
+1. Create a class Employee with the instance variables name, age, salary. Create getters and setters. Create a test class and create an object of Employee class, then set and print the employee details.
+
+2. Create a class Employee with the instance variables name, age, salary. Create properties for all the fields. Create a test class and create a student object set the details and display the details of student.
+
+3. WAP to print the area of rectangle by creating a class named "Area" taking the values of its length and breadth as parameters of its constructor and having a method named GetArea() which returns the area of rectangle. Length and breadth of rectangle are entered through the keyboard.
+
+4. Create a class Person with name,age. Create a parameterized constructor to initialize the variables and a method void ShowInfo() to display person details. Create a class Student which is  sub class of Person and add the field  string faculty. Override the method ShowInfo() to display faculty.  Create a class Teacher which is a sub class of Person and add  the field double salary.Override the method ShowInfo() to display salary. Provide a test class and create two objects 1 for Student and 1 for Teacher. Set and Print their details. 
+
+5. Create a class Shape with two instance variables dim1 and dim2 that represent any two dimensions. Provide a parameterized constructor to initialize the variables. Create an abstract method double Area(). Create two subclasses - Rectangle and Triangle and find their area. In the main class create objects of Rectangle and Triangle and show the area.
+
+
+Lab-4 (Exception Handling, Operator Overloading)
+1. WAP to input two integers and print the result by dividing first number with second. Handle DivideByZeroException.
+2. WAP to handle IndexOutOfRangeException.
+3. WAP to create your own exception class.
+4. WAP to add two Time objects that contain the fields int hr,min,s by overloading the "+" operator.
+5. WAP to overload the unary operator "--" that reduces the value of an object of Number class that contains the field "int value" by 1. 
+
+
+LAB-5
+Working with GUI Forms
+1.Create a Windows Forms Application in which the message "Button is Clicked" should be displayed in a message box when the button is clicked.
+2.Create a WFA with a text box and a button. When the button is clicked value of text box should be checked for odd/even.
+3.Create a WFA with 2 text box, 1 text area and a button. When the button is clicked, display all numbers from value of text box1 to value of textbox2 in the text area.
+4. Create a WFA to perform addition/subtraction/multiplication/division on respective button click.
+5. Create a WFA for simple interest calculation.
+
+
+LAB-6:
+Database Connectivity and ASP.NET
+------------------------------------
+1. WAP to insert id, name, address, faculty into a table when a button is clicked.
+2. WAP to display the records (id,name,address,faculty) from a table when the button is clicked.
+3. Create a Windows Forms application which takes contains 4 text boxes to input id, name, address, faculty and a Button. WHen the button is clicked, save the provided information into a database table.
+4. Create a Windows Forms application with a DataGridView and a button . WHen the button is clicked, the records from database table should be displayed in a DataGridView.
+5. Create a web application that contains a form to input two numbers and a submit button. When the button is clicked, write the sum as response.
+6. Create a web application that contains a form to input a number and a submit button. When the button is clicked, check the provided number and display "Even" or "Odd" as a response.
+7. Write a program to show the use of validation controls in ASP.NET.
+
+
+LAB-7 (LINQ)
+1. Write a program to store name of 5 countries in a List and then display the country names starting with "N" using LINQ.
+2. Write a program to store name of 5 countries in a List and then display the country names that contain either with "a" or "i" using LINQ.    
+3. Write a program to store Students (name, age, address) into a List and then print only those students who are teenagers using LINQ.
+4. Write a program to store Students (name, age, address) into a List and then print only the first student whose name is "Ram" using LINQ.
+5. Write a program to store Students (name, age, address) into a List and then print sort them by the "age" in ascending order using LINQ.

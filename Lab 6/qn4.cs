@@ -1,31 +1,43 @@
+using Microsoft.Data.SqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace WinFormsApp1
 {
-    public partial class Add : Form
+    public partial class qn4 : Form
     {
-        public Add()
+        public qn4()
         {
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            // 1. Put your connection string into a string variable
+            string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\rohit\source\repos\WinFormsApp1\WinFormsApp1\Database1.mdf;Integrated Security=True;Connect Timeout=30";
+            string query = "select * from STUDENTlab";
 
-        }
+            // 2. Pass that string variable directly into the SqlConnection constructor here
+            using (SqlConnection connection = new SqlConnection(connString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    try
+                    {
+                        SqlDataAdapter adapter = new SqlDataAdapter(command);
+                        DataTable dataTable = new DataTable();
 
-        private void btnadd_Click(object sender, EventArgs e)
-        {
-            int num1 = int.Parse(textBox1.Text);
-            int num2 = int.Parse(textBox2.Text);
-            int sum = num1 + num2;
-            result.Text = sum.ToString();
+                        adapter.Fill(dataTable);
+                        dataGridView1.DataSource = dataTable;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("An error occurred while loading data: " + ex.Message,
+                                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
         }
     }
 }
